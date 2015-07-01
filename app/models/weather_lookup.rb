@@ -1,7 +1,7 @@
-class WeatherLookup < ActiveRecord::Base
+class WeatherLookup #< ActiveRecord::Base
 
         def fetch_weather
-        HTTParty.get("http://api.wunderground.com/api/13e7328f2d325be/hourly/q/20001.xml")
+        HTTParty.get("http://api.wunderground.com/api/13e7328f2d325bef/hourly/q/20001.xml")
 end
     attr_accessor :temperature, :icon
          def initialize
